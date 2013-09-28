@@ -16,14 +16,19 @@
         android:onClick="newItem"
             android:paddingLeft="10dip"
             android:layout_alignParentRight="true"/>
-    <ListView
-        android:id="@+id/task_list"
-        android:layout_height="wrap_content"
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:l
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
         >
-    </ListView>
-
+        <ListView
+            android:id="@+id/task_list"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            >
+        </ListView>
+    </LinearLayout>
 
     */<EditText android:id="@+id/edit_message"
       android:layout_width="wrap_content"
