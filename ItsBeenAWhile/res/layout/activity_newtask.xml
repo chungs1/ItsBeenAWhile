@@ -9,9 +9,14 @@
               android:layout_height="wrap_content"
               android:layout_width="250dp"
               android:textAlignment="center"
-              android:hint="@string/task_name"
+
               android:layout_marginTop="200dp"
               android:layout_marginLeft="63dp" />
 
-
+	<Button
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/button_save"
+	    android:onClick="saveTask" />
+    
 </LinearLayout>

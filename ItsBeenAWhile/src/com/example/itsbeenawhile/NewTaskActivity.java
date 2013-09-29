@@ -41,6 +41,7 @@ public class NewTaskActivity extends Activity {
     	} catch (IOException e) {
     		e.printStackTrace();
     	}
+    	super.onBackPressed();
     }
     
 }
