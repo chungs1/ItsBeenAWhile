@@ -7,9 +7,12 @@ import java.io.IOException;
 import java.util.Calendar;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.LinearLayout;
 
 /**
  * Created by Fareki on 9/28/13.
@@ -18,10 +21,20 @@ import android.view.View;
 public class NewTaskActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_newtask);
+        setContentView(R.layout.activity_new_newtask);
+        LinearLayout dateAndTime = (LinearLayout) findViewById(R.id.newTask);
+        LayoutInflater li = getLayoutInflater();
+        LinearLayout tmp = (LinearLayout) li.inflate(R.layout.custom_layout, null);
+        dateAndTime.addView(tmp);
+
     }
     
-    
+    public void getUserInput(View v) {
+        Dialog dialog = new Dialog(getBaseContext());
+        dialog.setContentView(R.id.datePicker);
+        saveTask(v);
+    }
+
     public void saveTask(View view) {
     	try{
     	Calendar calendar = Calendar.getInstance();
