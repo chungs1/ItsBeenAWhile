@@ -34,9 +34,9 @@ public class NewTaskActivity extends Activity {
     	dateBytes[0] = (byte) 2;
     	dateBytes[1] = (byte) 2;
     	dateBytes[2] = (byte) 2;
-    	dateBytes[3] = (byte) 2;
+    	dateBytes[3] = (byte) 2;	
     	
-    	File file = new File("data/data/com.example.itsbeenawhile/task.txt");
+    	File file = new File("data/data/com.example.itsbeenawhile/"+task+".txt");
     	FileOutputStream fos = getApplicationContext().openFileOutput(task+".txt", Context.MODE_PRIVATE);
     	fos.write(dateBytes);
     	fos.close();

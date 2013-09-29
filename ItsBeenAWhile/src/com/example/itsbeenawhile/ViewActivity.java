@@ -2,6 +2,7 @@ package com.example.itsbeenawhile;
 
 
 import java.io.File;
+import java.util.Calendar;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -40,6 +41,12 @@ public class ViewActivity extends Activity {
 	public void deleteTask(View view){
 		File dir = getFilesDir();
 		super.onBackPressed();
+	}
+	
+	public void resetTask(View view){
+		Calendar reset = Calendar.getInstance();
+		
+		
 	}
 
 	@Override
