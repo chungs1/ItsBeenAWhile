@@ -3,9 +3,21 @@
 
     <string name="app_name">Its Been A While</string>
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
     <string name="new_task">+</string>
     <string name="task_name">Task Name</string>
     <string name="pick_time">Start Time</string>
     <string name="next">Next</string>
 
+=======
+
+    <string name="new_task">+</string>
+    <string name="task_name">Task Name</string>
+    <string name="title_activity_view">ViewActivity</string>
+	<string name="button_create">Create</string>
+	<string name="button_save">Save Task</string>
+	<string name="delete">DELETE</string>
+	<string name="reset">RESET</string>
+    
+>>>>>>> master
 </resources>
