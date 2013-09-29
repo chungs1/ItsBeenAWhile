@@ -37,47 +37,4 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
     
-    
-    /**
-    public class CustomList extends ListActivity {
-    	private LayoutInflater minflater;
-    	private Vector<RowData> data;
-    	
-    	public void onCreate(Bundle savedInstanceState) {
-    		super.onCreate(savedInstanceState);
-    		setContentView(R.layout.activity_main);
-    		minflater = (LayoutInflater) getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-    		
-    		InputStream in = null;
-    		try {
-    			in = openFileInput("data/data/com.example.itsbeenawhile/task.txt");
-    			if (in != null) {
-    				InputStreamReader isr = new InputStreamReader(in);
-    				BufferedReader br = new BufferedReader(isr);
-    				String receiveString = "";
-    				StringBuilder stringBuild = new StringBuilder();
-    				
-    				while((receiveString = br.readLine()) != null) {
-    					stringBuild.append(receiveString);
-    				}
-    			}
-    		} catch (FileNotFoundException e){
-    			// do nothing
-    		}
-    		// data = new Vector<RowData>;
-    		// RowData rd = new RowData()
-    	catch (IOException e) {
-    		// do nothing
-    	}
-
-		private InputStream BufferedInputStream(FileInputStream fileInputStream) {
-			// TODO Auto-generated method stub
-			return null;
-		}
-    }
-    
-    private class RowData {
-    	
-    }*/
-    
 }
