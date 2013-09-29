@@ -12,10 +12,14 @@
               >
     <DatePicker android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                />
+                >Pick a Start</DatePicker>
     <TimePicker android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
-                />
-    <Button 
+                >Pick a Start Time</TimePicker>
+    <Button android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:text="@string/next"
+            android:onClick="saveStartDateAndTime"/>
 
 </LinearLayout>

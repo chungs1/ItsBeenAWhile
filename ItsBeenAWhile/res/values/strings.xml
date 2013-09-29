@@ -6,5 +6,6 @@
     <string name="new_task">+</string>
     <string name="task_name">Task Name</string>
     <string name="pick_time">Start Time</string>
+    <string name="next">Next</string>
 
 </resources>
