@@ -21,11 +21,6 @@ public class NewTaskActivity extends Activity {
         setContentView(R.layout.activity_newtask);
     }
     
-<<<<<<< HEAD
-=======
-    
-    
-    
     
     public void saveTask(View view) {
     	try{
@@ -47,6 +42,5 @@ public class NewTaskActivity extends Activity {
     	}
     	super.onBackPressed();
     }
-    
->>>>>>> master
+
 }
