@@ -32,6 +32,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="MainActivity" />
         </activity>
+        <activity
+            android:name="com.example.itsbeenawhile.CustomList"
+            android:label="@string/title_activity_custom_list" >
+        </activity>
     </application>
 
 </manifest>
