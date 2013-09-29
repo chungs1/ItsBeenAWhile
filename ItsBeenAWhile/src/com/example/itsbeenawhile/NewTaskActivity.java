@@ -27,7 +27,9 @@ public class NewTaskActivity extends Activity {
     
     public void saveTask(View view) {
     	try{
-    	String task = "task" + Calendar.getInstance().toString();
+    	Calendar calendar = Calendar.getInstance();
+    	long c = calendar.getTimeInMillis()/1000;
+    	String task = "task" + Long.toString(c);
     	byte[] dateBytes = new byte[5];
     	dateBytes[0] = (byte) 2;
     	dateBytes[1] = (byte) 2;
