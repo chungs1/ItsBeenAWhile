@@ -3,9 +3,8 @@
 
     <string name="app_name">ItsBeenAWhile</string>
     <string name="action_settings">Settings</string>
-    //<string name="hello_world">Hello world!</string>
-    //<string name="edit_message">Type Something Here</string>
     <string name="new_task">+</string>
     <string name="task_name">Task Name</string>
+    <string name="pick_time">Start Time</string>
 
 </resources>
