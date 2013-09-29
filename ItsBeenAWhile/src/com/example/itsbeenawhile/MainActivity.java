@@ -3,6 +3,7 @@ package com.example.itsbeenawhile;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Vector;
@@ -37,7 +38,7 @@ public class MainActivity extends Activity {
     }
     
     
-    
+    /**
     public class CustomList extends ListActivity {
     	private LayoutInflater minflater;
     	private Vector<RowData> data;
@@ -63,8 +64,10 @@ public class MainActivity extends Activity {
     		} catch (FileNotFoundException e){
     			// do nothing
     		}
-    		data = new Vector<RowData>;
-    		RowData rd = new RowData()
+    		// data = new Vector<RowData>;
+    		// RowData rd = new RowData()
+    	catch (IOException e) {
+    		// do nothing
     	}
 
 		private InputStream BufferedInputStream(FileInputStream fileInputStream) {
@@ -75,6 +78,6 @@ public class MainActivity extends Activity {
     
     private class RowData {
     	
-    }
+    }*/
     
 }
