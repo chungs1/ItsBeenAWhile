@@ -13,5 +13,6 @@
     <string name="reset">RESET</string>
     <string name="title_activity_custom_list">CustomList</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_list_task">ListTaskActivity</string>
 
 </resources>

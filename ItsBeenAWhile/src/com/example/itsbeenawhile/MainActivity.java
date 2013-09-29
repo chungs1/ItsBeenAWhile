@@ -1,18 +1,12 @@
 package com.example.itsbeenawhile;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.Vector;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 import android.app.Activity;
-import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 
@@ -22,8 +16,27 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //get list of all filenames
+        List<File> files = getListFiles(new File("data/data/com.example.itsbeenawhile/")); 
+        for (File file : files){
+        	//
+        }
     }
-
+    
+    private List<File> getListFiles(File parentDir) {
+        ArrayList<File> inFiles = new ArrayList<File>();
+        File[] files = parentDir.listFiles();
+        for (File file : files) {
+            if (file.isDirectory()) {
+                inFiles.addAll(getListFiles(file));
+            } else {
+                if(file.getName().endsWith(".txt")){
+                    inFiles.add(file);
+                }
+            }
+        }
+        return inFiles;
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
